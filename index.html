@@ -20,12 +20,12 @@
     <section class="versions">
         <div class="version">
             <h3>Original Version (Version A)</h3>
-            <img src="path-to-version-a-image.jpg" alt="Screenshot of Original Version A">
+            <img src="/Users/rahuldey/Documents/GitHub/ABHandin/Version A.png" alt="Screenshot of Original Version A">
         </div>
         
         <div class="version">
             <h3>My Version (Version B)</h3>
-            <img src="path-to-version-b-image.jpg" alt="Screenshot of Version B">
+            <img src="/Users/rahuldey/Documents/GitHub/ABHandin/VersionB.png" alt="Screenshot of Version B">
         </div>
     </section>
 
@@ -43,17 +43,62 @@
 
     <section class="predictions">
         <h3>Predictions</h3>
-        <p>[Include Predictions Content Here]</p>
+        <p>Hypothesis 1:
+            I predict that I’ll reject the null hypothesis. Version B was designed to help the user complete the task quickly and with minimum to no errors. This was an improvement on top of version A and I therefore expect the number of misclicks on Version B to be fewer than the misclicks on Version A.
+            
+            Hypothesis 2:
+            I predict that users will spend less time on Version B than on Version A and that the null hypothesis will be rejected. Version B was optimized to help the users complete the task quickly and I specifically reduced the screen size to capture the schedule in one page so the user would not have to scroll through to find the appointment. The idea was the user can view and complete the appointment with no scrolling and therefore finish it quickly. 
+            
+            Hypothesis 3: 
+            I expect to fail to reject the null hypothesis 3 - Version A and B will have the same number of clicks. This is because Version A has the same buttons that Version B has and the number of clicks required to complete the task is the same. 
+            </p>
     </section>
 
     <section class="tests">
         <h3>Tests</h3>
-        <p>[Include Tests and Results Content Here]</p>
-    </section>
-
-    <section class="interpretation">
-        <h3>Interpretation</h3>
-        <p>[Include Interpretations Here]</p>
+        <p>Hypothesis 1
+            For Hypothesis 1, I ran a Chi-squared test because I was comparing proportions, i.e, the rate of misclicks which was a boolean (TRUE of FALSE) between two independent groups (version A and version B). 
+            
+            Results:
+            Df = 1
+            chi^2 = 5.192307692
+            P-value = 0.02268707154
+            
+            
+            Interpretation 
+            The test suggests that there is a statistically significant difference in the rate of misclicks between Version A and Version B, with a significance level of 0.02. The Chi-squared statistic was 5.1 and higher than the frequency I expected to see if there were no differences in the 2 versions (my null hypothesis). Therefore, I reject the null. 
+            
+            Hypothesis 2
+            For Hypothesis 2, I ran the one-tailed t-test because I wanted to test if users spend less time on Version B (my alternative hypothesis). Since I wanted to test a specific direction of difference, the one-tailed test made the most sense.
+            
+            Results
+            Average Time Spent: 
+            Version A: 11,249.67 milliseconds
+            T-score: -0.06746053109
+            P-value (for A < B): 0.473263241
+            
+            
+            Interpretation
+            Version B: 11,501.3 milliseconds
+            The average time spent on Version B is slightly higher than on Version A, which suggests that users might be spending more time on Version B, contrary to my alternative hypothesis that expected less time spent on Version B.
+            
+            T-score: The negative t-score indicates that the mean time spent on Version A is less than the mean time spent on Version B, but the magnitude of this difference (as reflected by the t-score) is very small.
+            
+            P-value: The p-value of 0.473263241 is much higher than the typical alpha level of 0.05 used for statistical significance. In the context of a one-tailed test where your alternative hypothesis (H1) states that users spend less time on Version B, this high p-value indicates that there is not sufficient evidence to reject the null hypothesis.
+            
+            Hypothesis 3 
+            For Hypothesis 3, I also chose to run the one-tailed t-test because I am comparing if the user clicks fewer times on Version B than on Version A. 
+            
+            Results
+            Average Clicks: Version A: 2.7, Version B: 2.933333333
+            Variance: Version A: 6.975862069, Version B: 1.788505747
+            Degrees of Freedom: 42.95313979
+            T-score: -0.4316950958
+            P-value (for A < B): 0.3340611393
+            
+            Interpretation
+            The average clicks for Version B are slightly higher than for Version A. This outcome already suggests that Version B does not have fewer clicks than Version A, contrary to my alternative hypothesis. With a p-value of 0.334, the test does not provide enough statistical evidence to reject the null hypothesis. The data suggests that Version B has slightly more clicks on average, although this difference is not statistically significant. The slight increase in clicks for Version B, while not statistically significant, indicates that design changes might be required to reduce the number of clicks a user makes so the task is completed quicker. 
+            </p>
     </section>
 </body>
 </html>
