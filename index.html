@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A/B Testing Version</title>
+    <title>A/B Testing</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>A/B Testing Version</h1>
+        <h1>A/B Testing</h1>
         <h2>Rahul Dey</h2>
     </header>
 
@@ -67,19 +67,19 @@
             <h3>Tests</h3>
             <ul>
                 <li>
-                    <p>Hypothesis 1: For Hypothesis 1, I ran a Chi-squared test because I was comparing proportions, i.e, the rate of misclicks which was a boolean (TRUE of FALSE) between two independent groups (version A and version B).</p>
-                    <p><mark>Results: Df = 1, chi^2 = 5.192307692, P-value = 0.02268707154</mark></p>
-                    <p><mark>Interpretation: The test suggests that there is a statistically significant difference in the rate of misclicks between Version A and Version B, with a significance level of 0.02. The Chi-squared statistic was 5.1 and higher than the frequency I expected to see if there were no differences in the 2 versions (my null hypothesis). Therefore, I reject the null.</mark></p>
+                    <p><b> Hypothesis 1: </b> For Hypothesis 1, I ran a Chi-squared test because I was comparing proportions, i.e, the rate of misclicks which was a boolean (TRUE of FALSE) between two independent groups (version A and version B).</p>
+                    <p> <b> Results: </b> Df = 1, chi^2 = 5.192307692, P-value = 0.02268707154</p>
+                    <p> <b> Interpretation: </b> The test suggests that there is a statistically significant difference in the rate of misclicks between Version A and Version B, with a significance level of 0.02. The Chi-squared statistic was 5.1 and higher than the frequency I expected to see if there were no differences in the 2 versions (my null hypothesis). Therefore, I reject the null.</p>
                 </li>
                 <li>
-                    <p>Hypothesis 2: For Hypothesis 2, I ran the one-tailed t-test because I wanted to test if users spend less time on Version B (my alternative hypothesis). Since I wanted to test a specific direction of difference, the one-tailed test made the most sense.</p>
-                    <p><mark>Results: Average Time Spent: Version A: 11,249.67 milliseconds, T-score: -0.06746053109, P-value (for A < B): 0.473263241</mark></p>
-                    <p><mark>Interpretation: Version B: 11,501.3 milliseconds. The average time spent on Version B is slightly higher than on Version A, which suggests that users might be spending more time on Version B, contrary to my alternative hypothesis that expected less time spent on Version B. T-score: The negative t-score indicates that the mean time spent on Version A is less than the mean time spent on Version B, but the magnitude of this difference (as reflected by the t-score) is very small. P-value: The p-value of 0.473263241 is much higher than the typical alpha level of 0.05 used for statistical significance. In the context of a one-tailed test where your alternative hypothesis (H1) states that users spend less time on Version B, this high p-value indicates that there is not sufficient evidence to reject the null hypothesis.</mark></p>
+                    <p> <b> Hypothesis 2: </b> For Hypothesis 2, I ran the one-tailed t-test because I wanted to test if users spend less time on Version B (my alternative hypothesis). Since I wanted to test a specific direction of difference, the one-tailed test made the most sense.</p>
+                    <p> <b> Results: </b> Average Time Spent: Version A: 11,249.67 milliseconds, T-score: -0.06746053109, P-value (for A < B): 0.473263241</p>
+                    <p> <b> Interpretation: </b> Version B: 11,501.3 milliseconds. The average time spent on Version B is slightly higher than on Version A, which suggests that users might be spending more time on Version B, contrary to my alternative hypothesis that expected less time spent on Version B. T-score: The negative t-score indicates that the mean time spent on Version A is less than the mean time spent on Version B, but the magnitude of this difference (as reflected by the t-score) is very small. P-value: The p-value of 0.473263241 is much higher than the typical alpha level of 0.05 used for statistical significance. In the context of a one-tailed test where your alternative hypothesis (H1) states that users spend less time on Version B, this high p-value indicates that there is not sufficient evidence to reject the null hypothesis.</p>
                 </li>
                 <li>
-                    <p>Hypothesis 3: For Hypothesis 3, I also chose to run the one-tailed t-test because I am comparing if the user clicks fewer times on Version B than on Version A.</p>
-                    <p><mark>Results: Average Clicks: Version A: 2.7, Version B: 2.933333333, Variance: Version A: 6.975862069, Version B: 1.788505747, Degrees of Freedom: 42.95313979, T-score: -0.4316950958, P-value (for A < B): 0.3340611393</mark></p>
-                    <p><mark>Interpretation: The average clicks for Version B are slightly higher than for Version A. This outcome already suggests that Version B does not have fewer clicks than Version A, contrary to my alternative hypothesis. With a p-value of 0.334, the test does not provide enough statistical evidence to reject the null hypothesis. The data suggests that Version B has slightly more clicks on average, although this difference is not statistically significant. The slight increase in clicks for Version B, while not statistically significant, indicates that design changes might be required to reduce the number of clicks a user makes so the task is completed quicker.</mark></p>
+                    <p><b> Hypothesis 3: </b> For Hypothesis 3, I also chose to run the one-tailed t-test because I am comparing if the user clicks fewer times on Version B than on Version A.</p>
+                    <p> <b> Results: </b> Average Clicks: Version A: 2.7, Version B: 2.933333333, Variance: Version A: 6.975862069, Version B: 1.788505747, Degrees of Freedom: 42.95313979, T-score: -0.4316950958, P-value (for A < B): 0.3340611393</p>
+                    <p> <b> Interpretation: </b>The average clicks for Version B are slightly higher than for Version A. This outcome already suggests that Version B does not have fewer clicks than Version A, contrary to my alternative hypothesis. With a p-value of 0.334, the test does not provide enough statistical evidence to reject the null hypothesis. The data suggests that Version B has slightly more clicks on average, although this difference is not statistically significant. The slight increase in clicks for Version B, while not statistically significant, indicates that design changes might be required to reduce the number of clicks a user makes so the task is completed quicker.</p>
                 </li>
             </ul>
         </section>
